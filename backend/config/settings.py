@@ -23,7 +23,11 @@ USE_I18N=True
 USE_TZ=True
 STATIC_URL='static/'
 DEFAULT_AUTO_FIELD='django.db.models.BigAutoField'
-CORS_ALLOWED_ORIGINS=['http://localhost:5173','http://127.0.0.1:5173']
+CORS_ALLOWED_ORIGINS = [
+    'http://localhost:5173',
+    'http://127.0.0.1:5173',
+    'https://frontend-alpha-nine-t2l8dab2zm.vercel.app',
+]
 REST_FRAMEWORK={'DEFAULT_PERMISSION_CLASSES':['rest_framework.permissions.AllowAny']}
 RAZORPAY_KEY_ID=os.getenv('RAZORPAY_KEY_ID','')
 RAZORPAY_KEY_SECRET=os.getenv('RAZORPAY_KEY_SECRET','')
