@@ -1,0 +1,12 @@
+*.sqlite3
+.env
+__pycache__/
+.env.*
+!.env.example
+venv/
+.venv/
+ENV/
+node_modules/
+dist/
+build/
+media/
