@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 
-const API = 'http://127.0.0.1:8000/api';
+
+const API = 'https://electromart-757f.onrender.com/api';
+
 
 export default function Checkout({ cart, clearCart }) {
   const [form, setForm] = useState({ name: '', phone: '', address: '', city: '', pincode: '' });
